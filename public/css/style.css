@@ -1,0 +1,85 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tabulator-table .tabulator-row .tabulator-cell:first-child,
+.tabulator-table .tabulator-row .tabulator-cell:first-child + div {
+    background-color: #d8d8d8;
+    border-bottom: 1px solid gray;
+}
+.tabulator-table .tabulator-row .tabulator-cell:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 99;
+}
+
+.tabulator-table .tabulator-row .tabulator-cell:first-child + div {
+    position: sticky;
+    left: 40px;
+    z-index: 99;
+}
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: hidden;
+}
+
+.container {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+}
+
+.tabulator {
+    height: calc(100% - 35px);
+}
+
+.header-buttons {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons button{
+    padding: 7px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    background-color: #409143;
+}
+
+.loading-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000087;
+    cursor: wait;
+    display: flex;
+    align-items: center;
+}
+
+.loader-span {
+    margin: auto;
+    color: white;
+    font-size: 2em;
+}
